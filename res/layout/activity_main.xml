@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点歌台" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:verticalSpacing="10dp"  
+        android:horizontalSpacing="10dp"
+        android:columnWidth="90dp"  
+        android:background="#FFeff1ef"
+        android:stretchMode="columnWidth"  
+        android:gravity="center"  
+        android:layout_below="@+id/editText1"
+        android:numColumns="2" >
+    </GridView>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:drawableRight="@drawable/u6_normal"
+        android:ems="10"
+        android:hint="歌名，歌手"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
